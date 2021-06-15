@@ -1,0 +1,201 @@
+body {
+  background-color: #E6E6FA;
+}
+
+table, th {
+/* border: 1px solid black; */
+border-collapse: collapse;
+}
+td {
+  height: 50px;
+  width: 200px;
+  text-align: center;
+}
+table.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+    text-align: center;
+}
+
+.button1 {
+    position: relative;
+    left: 1300px;
+    top: 50%;
+    background-color: black;
+    color: white;
+}
+.button2 {
+    position: relative;
+    top: 50%;
+    background-color: black;
+    color: white;
+}
+
+h4 {
+display: block;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 1em;
+margin-right: 0;
+  }
+
+.img1 {
+width: 600px;
+height: 400px;
+margin-left: auto;
+}
+.logo {
+width: 600px;
+height: 400px;
+margin-left: auto;
+}
+
+.box {
+text-align: left;
+background-size: 100px 100px;
+height: 130px;
+width: 600px;
+margin: 25px;
+padding: 40px 30px 60px 100px;
+border: 1px solid black;
+border-radius: 15px;
+display: flex;
+box-shadow: 10px 10px 5px 3px #ADADAD, 7px 7px 5px 1px #ADADAD inset;
+}
+
+.btn-text-center{
+text-align: center;
+}
+
+.message {
+  font-family: cursive;
+  font-style: italic;
+  position: relative;
+  text-align:center;
+  vertical-align:middle;
+  text-align:center;
+  padding:30px 0px 0px 0px;
+}
+
+.login {
+  width: 80px;
+  height: 30px;
+  text-align:center;
+  font-size: 1.5em;
+}
+.button {
+  position: absolute;
+  left: 100px;
+  top: 500px;
+  width: 190px;
+  height: 40px;
+  text-align:center;
+  font-size: 1.5em;
+  border-style: double;
+  border-radius: 10px;
+}
+.button:visited, .login:link, .login:visited, .delete_button:visited, .delete_button:link, .show_reservations:visited, .show_reservations:link{
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.button:hover, .button:active, .login:hover, .login:active, .delete_button:active, .delete_button:hover, .show_reservations:hover, .show_reservations:active {
+  background-color: #993399;
+  color: white;
+}
+
+.login_div {
+   position: absolute;
+   left: 1000px;
+   top: 300px;
+   font-size: 0.9em;
+}
+
+#signup, #login {
+  width: 800px;
+}
+
+.delete_button {
+  text-decoration: none;
+  position: absolute;
+  left: 500px;
+  width: 80px;
+  height: 50px;
+  text-align:center;
+  font-size: 1em;
+}
+
+.show_reservations {
+  position: absolute;
+  left: 1000px;
+  top: 600px;
+  width: 250px;
+  height: 60px;
+  text-align:center;
+  font-size: 1.5em;
+  border-style: double;
+  border-radius: 10px;
+}
+
+.all_rooms {
+  position: absolute;
+  left: 200px;
+  top: 1000px;
+  width: 190px;
+  height: 40px;
+  text-align:center;
+  font-size: 1.5em;
+  border-style: double;
+  border-radius: 10px;
+}
+
+
+select {
+  outline: none;
+  // A reset of styles, including removing the default dropdown arrow
+  appearance: none;
+  // Additional resets for further consistency
+  background-color: red;
+  border: none;
+  padding: 0 1em 0 0;
+  margin: 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: inherit;
+  line-height: inherit;
+}
+
+:root {
+  --select-border: #777;
+  --select-focus: blue;
+  --select-arrow: var(--select-border);
+}
+
+.select {
+  width: 100%;
+  min-width: 15ch;
+  max-width: 30ch;
+  border: 1px solid var(--select-border);
+  border-radius: 0.25em;
+  padding: 0.25em 1em;
+  font-size: 1.25rem;
+  cursor: pointer;
+  line-height: 1.1;
+  background-color: #fef;
+  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);
+}
+
+.select::after {
+  content: "";
+  width: 0.8em;
+  height: 0.5em;
+  background-color: var(--select-arrow);
+  clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+}

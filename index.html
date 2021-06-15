@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+  <script src="lab7.js"></script>
+
+  <title>Reservierung</title>
+
+</head>
+<body>
+
+<!-- Lab 7 - Dropdown Menu -->
+<div id="menuBackground">
+  <div class="menu">
+    <ul id="dropDownMenu">
+      <li class="has-children"> <a href="#">Hotel info</a>
+        <ul>
+          <li> <a href="https://www.radissonhotels.com/en-us/hotels/radisson-blu-resort-maldives/rooms">Hotel website</a> </li>
+          <li> <a href="lab6.html">Foto slideshow</a> </li>
+          <!-- <li> <a href="#">Sub3</a> </li> -->
+        </ul>
+      </li>
+      <li class="has-children"> <a href="#">Topic2</a>
+        <ul>
+          <li> <a href="#">Sub1</a> </li>
+          <li> <a href="#">Sub2</a> </li>
+          <li> <a href="#">Sub3</a> </li>
+        </ul>
+      </li>
+      <li class="has-children"> <a href="#">Topic3</a>
+        <ul>
+          <li> <a href="#">Sub1</a> </li>
+          <li class="has-children"> <a href="#">Sub2</a>
+            <ul>
+              <li> <a href="#">Ceva 1</a> </li>
+              <li> <a href="#">Ceva 2</a> </li>
+            </ul>
+          </li>
+          <li> <a href="#">Sub3</a> </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<h1 style="text-align:center; padding:30px 0px 0px 0px"> Radisson-Blu Resort  Reservation</h1>
+
+<div style="text-align:center;vertical-align:middle;">
+  <img class="img1" src="maldive.jpg" alt="Maldive" />
+</div>
+
+<form>
+<fieldset>
+  <legend> <h3> ***Pers&#525;nliche Informationen*** </h3> </legend>
+  <label for="fname">Name:</label>
+  <input type="text" id="fname" name="fname" value="Popa"><br><br>
+  <label for="lname">Vorname:</label>
+  <input type="text" id="lname" name="lname" value="Iuliana"><br><br>
+  <label for="email">Email:&emsp;</label>
+  <input type="text" id="email" name="email" size = "30" value = "popaiulianadiana@yahoo.com"><br><br>
+  <label for="tel">TelefonNr:&emsp;</label>
+  <input type="text" id="tel" name="tel" maxlength="10" value = "0744903141"><br><br>
+
+  <h3> Bezahlungsm&#525;glichkeiten </h3>
+  <input type="checkbox" id="option1" name="option1" value="integral">
+ <label for="option1"> Integrale Bezahlung</label><br>
+ <input type="checkbox" id="option2" name="option2" value="avans" checked>
+ <label for="option2"> Partielle Bezahlung(20%)</label><br>
+ <br> <br>
+ <input type="checkbox" id="option3" name="option3" value="transfer" checked>
+<label for="option3"> Bank Transfer</label><br>
+ <input type="checkbox" id="option4" name="option4" value="online">
+<label for="option4"> Online</label><br>
+<input type="checkbox" id="option5" name="option5" value="cash">
+<label for="option5"> Cash</label><br>
+<input type="checkbox" id="option6" name="option6" value="tickets">
+<label for="option6"> Tickets (Ferientickets)</label><br>
+
+</fieldset>
+</form>
+
+<br>
+<br>
+
+<form>
+
+       <label for="plecare">Abfahrtsort:&emsp;</label>
+       <input type="text" id="plecare" name="plecare" size= "30" value = "Bukarest" readonly>
+       <br><br>
+
+       <label for="sosire">Ankunftsort:&emsp;</label>
+       <input type="text" id="sosire" name="sosire" size= "30" value = "Velana International Airport" disabled>
+       <br><br>
+
+       <label for="Check-in">Check-in:&emsp;</label>
+       <input type="date" id="Check-in" name="check-in">
+
+       <label for="Check-out"> &emsp; &emsp; &emsp; Check-out:&emsp;</label>
+       <input type="date" id="Check-out" name="check-out">
+
+       <br>
+       <br>
+       <br>
+       <label for="Rooms">Anzahl Zimmern:</label>
+       <select name="rooms" id="Rooms" multiple>
+         <option value="1" selected>1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+       </select>
+
+       <label for="Adults">&emsp;&emsp; Anzahl Erwachsene:</label>
+       <select name="adults" id="Adults">
+         <option value="1">1</option>
+         <option value="2" selected>2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+       </select>
+
+       <label for="Children">&emsp; Anzahl Kindern:</label>
+       <select name="children" id="Children">
+         <option value="1" selected >1</option>
+         <option value="2">2</option>
+         <option value="3">3</option>
+         <option value="4">4</option>
+       </select>
+   </form>
+   <br>
+
+<p>   <a href="https://www.radissonhotels.com/en-us/hotels/radisson-blu-resort-maldives/rooms" target="_blank" >Hier</a> k&#525;nnen Sie mehr Informationen &#533;ber den gewahlten Hotel/Resort und auch Photos und Reviews von anderen Touristen finden. </p>
+
+
+<h3> Verf&#533;gbare Zimmern </h3>
+
+<table>
+ <tr>
+   <th>Raum Typ</th>
+   <th>Kapazit&#513;t</th>
+   <th>Preis</th>
+   <th>Essen</th>
+ </tr>
+ <tr>
+   <td> <input type="checkbox" name="option1" value="option1">
+   <label for="option1"> Doppeltes Raum </label></td>
+   <td>2</td>
+   <td>2000 Euro </td>
+   <td rowspan="3">
+     <ul>
+        <li>Fr&#533;hst&#533;ck</li>
+        <li>Abendessen</li>
+        <li>Getr&#513;nke</li>
+      </ul>
+       </td>
+ </tr>
+ <tr>
+   <td><input type="checkbox" name="option2" checked>Dreifaches Raum</td>
+   <td>3</td>
+   <td>2857 Euro</td>
+ </tr>
+ <tr>
+   <td><input type="checkbox" name="option3">Apartment</td>
+   <td>4-6</td>
+   <td>3600 Euro</td>
+ </tr>
+
+</table>
+
+<form method ="get" action="lab6.html" >
+  <div style="text-align:right;vertical-align:right;" class="wrapper">
+      <button class = "photos" type="submit" style ="font-size:30px"> Foto Gallery!</button>
+  </div>
+</form>
+
+<br>
+
+   <div class="box" >
+     <h4> Sichern Sie dass die pers&#525;nliche Informationen korrekt sind, weil <span style="color:red;font-weight:bold">nach der Reservierung k&#525;nnen Sie keine &#512;nderungen mehr machen</span>!
+   <br>  <br> Flash DEAL!! <br> Wenn Sie mit mindestens einen Monat den Ticket annullieren, bekommen Sie 70% des Wertes zuruck!
+    </h4>
+  </div>
+
+<br>
+<table>
+<tr>
+  <th> Included in the price </th>
+  <th> Not included </th>
+</tr>
+<tr>
+  <td>
+    <ul>
+      <li> Health assurance </li>
+      <li> Airport-hotel transport </li>
+      <li> Breakfast </li>
+      <li> Lunch </li>
+      <li> Drinks and snackbar </li>
+    </ul>
+  </td>
+  <td>
+    <ul>
+      <li> Spa </li>
+      <li> Guided tours
+        <ol>
+          <li> Local Island Day </li>
+          <li> Snorkeling </li>
+          <li> Scuba Diving </li>
+          <li> Parasailing </li>
+          <li> 2-Hour Submarine Tour </li>
+        </ol>
+       </li>
+      <li> Resort tax </li>
+    </ul>
+  </td>
+
+</table>
+
+
+<h4>Included in the price (Food + Drinks)</h4>
+
+<ol start="1" >
+  <li>Breakfast </li>
+  <li>Lunch    <ol type = "I">
+        <li> Local Food </li>
+        <li> Meditarranean </li>
+        <li> Vegetarian  </li>
+        <li> Japanese </li>
+  </ol>
+      </li>
+  <li>Drinks</li>
+</ol>
+
+
+<textarea rows="10" cols="50">
+Wenn Sie spezielle Bedingungen (wie Zum Beispiel vegetarianes Stil) oder verschiedene Intoleranzen haben, sollen Sie uns bitte hier mitteilen.
+</textarea>
+<br>
+
+<h2 style="text-align:center"> Zusammenfassung </h2>
+
+
+<table class="center">
+<tr>
+  <th> Flugzeug Ticket </th>
+  <th> 2000 Euro </th>
+  <th>
+    <table style = "width: 100%;">
+      <tr>
+        <td style="width:200px"> Enthalten </td>
+        <td style="width:200px"> Zus&#513;tzliche Kosten </td>
+      </tr>
+      <tr>
+        <th>
+          <ul>
+            <li> 3 x Flugzeug-Tickete (2 Erwachsene, 1 Kind) </li>
+            <li> Bagaj de cala(21 kg max) </li>
+          </ul>
+        </th>
+        <th >
+          <ul>
+            <li> Automatisches Check-in </li>
+            <li> Mehr Gep&#513;ck </li>
+            <li> Gesundheitsversicherung </li>
+            <li> Tourist Taxen </li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </th>
+</tr>
+
+<tr>
+  <th> Dreifaches Raum </th>
+  <th> 2857 Euro </th>
+  <th>
+    <table style = "width: 100%;">
+      <tr>
+        <td style="width:100px"> Enthalten </td>
+        <td style="width:100px"> Zus&#513;tzliche Kosten </td>
+      </tr>
+      <tr>
+        <th>
+          <ul>
+            <li> Fr&#533;hst&#533;ck(t&#513;glich) </li>
+            <li> Abendessen(t&#513;glich) </li>
+            <li> Snackbar und Getr&#513;nke </li>
+
+          </ul>
+        </th >
+        <th>
+          <ul>
+            <li> organisierte Tours </li>
+            <li> besondere Aktivit&#513;ten </li>
+          </ul>
+        </th>
+      </tr>
+    </table>
+  </th>
+  <tr>
+  <th colspan = "3"> Total:4857 + 100 (andere Taxen) = 4957 Euro </th>
+  </tr>
+
+</table>
+
+<br> <br>
+
+<form>
+  <p>Sind Sie einverstanden mit die Regeln unserer Tourismfirma und auch mit die Regeln des Resorts?</p>
+  <input type="radio" id="ja" name="antwort" value="ja">
+  <label for="ja">Ja</label><br>
+  <input type="radio" id="nein" name="antwort" value="nein">
+  <label for="nein">Nein</label><br>
+</form>
+
+<br>
+<form>
+  <p>Sind Sie zufrieden mit die Diensten unserer Firma?</p>
+  <input type="radio" id="ja2" name="antwort" value="ja2">
+  <label for="ja2">Sehr zufrieden</label><br>
+  <input type="radio" id="intre" name="antwort" value="intre">
+  <label for="intre">Man konnte einige Sachen verbessern</label><br>
+  <input type="radio" id="nein2" name="antwort" value="nein2">
+  <label for="nein2">Nein</label><br>
+</form>
+
+  <form method ="get" action="rezervare.html" >
+    <div class="wrapper">
+  <button class = "button1" type="submit" style ="font-size:30px"> Reservieren!</button>
+</div>
+  </form>
+
+</body>
+</html>

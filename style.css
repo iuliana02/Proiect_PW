@@ -1,0 +1,62 @@
+			body {
+			  background-color: #E6E6FA;
+			}
+
+			table, th, td {
+			border: 1px solid black;
+			border-collapse: collapse;
+			}
+			table.center {
+			  margin-left: auto;
+			  margin-right: auto;
+			}
+
+			.wrapper {
+			    text-align: center;
+			}
+
+			.button1 {
+			    position: relative;
+			    top: 50%;
+			}
+
+		h4 {
+			display: block;
+		  margin-top: 1em;
+		  margin-bottom: 1em;
+		  margin-left: 1em;
+		  margin-right: 0;
+				}
+
+		.img1 {
+			width: 600px;
+			height: 400px;
+			margin-left: auto;
+		}
+		.logo {
+			width: 600px;
+			height: 400px;
+			margin-left: auto;
+		}
+
+		.box {
+		background: #D3D3D3 url("hints-and-tips.png") no-repeat local left;
+		background-size: 100px 100px;
+		height: 150px;
+		width: 800px;
+		margin: 25px;
+		padding: 40px 30px 60px 100px;
+		border: 1px solid black;
+		border-radius: 15px;
+		display: flex;
+		box-shadow: 10px 10px 5px 3px #ADADAD, 7px 7px 5px 1px #ADADAD inset;
+	}
+
+	.btn-text-center{
+		text-align: center;
+	}
+
+.message {
+	text-align:center;
+	padding:30px 0px 0px 0px;
+}

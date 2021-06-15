@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">
+
+    <script src="ams_slideshow.js">
+    </script>
+
+<body>
+<div> <h2> Photo slideshow </h2> </div>
+<div style="text-align:center;vertical-align:middle;">
+  <img name="slide" id="imgSlideshow" width="500" height="300" object-position: "center top">
+</div>
+<br>
+
+<div class="btn-text-center">
+<button style="text-align:center" type="submit" id="pause" onclick="return changeImages()"> <img src="photos/play_pause.jpg" width = "40" height = "25"> </button>
+</div>
+
+<br>
+<div class="btn-text-center">
+  <input type="checkbox" id="play_again" value="Replay">
+  <label for="play_again"> REPLAY (for a short movie effect) </label>
+</div>
+
+<br>
+<div class="btn-text-center">
+  <label for="timer">  Choose how fast would you like to see the photos: </label>
+  <select name="time" id="time">
+    <option value="1000">1000</option>
+    <option value="2000">2000</option>
+    <option value="3000">3000</option>
+    <option value="4000">4000</option>
+    <option value="500">500</option>
+  </select>
+</div>
+
+<br><br><br><br><br><br>
+<div id="counter"></div>
+
+<div style=" text-align: center; position: relative"> <h2> See all photos </h2> </div>
+<div style="position:absolute; text-align: center;">
+       <img src="photos/amsterdam1.jpg" width = "550" height = "300">
+       <img src="photos/amsterdam2.jpg" width = "550" height = "300">
+       <img src="photos/amsterdam3.jpg" width = "550" height = "300">
+       <img src="photos/amsterdam4.jpg" width = "550" height = "300">
+
+       <form method ='get' action='first_page.php'>
+       <button  type='submit' style ='font-size:30px; position:absolute; bottom: 10px; right :30px; background-color: black; color: white; '> Back</button>
+       </form>
+
+</div>
+
+
+</body>
+</html>
